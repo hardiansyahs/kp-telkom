@@ -2,52 +2,59 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+use yii\helpers\Html;
+
+$this->title = 'Buku KP';
 ?>
+
+<head>
+    <title>Buku KP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
 <div class="site-index">
 
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
-
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
-
-    <div class="body-content">
-
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
+    <body>
+        <div class="row no-gutters">
+            <div class="col-md-6">
+                <div class="leftside no-gutters d-flex justify-content-center align-items-center">
+                    <img src="img/telkom2.jpg" alt="">
+                    <div class="left">
+                        <div class="text1">
+                            <h4>Lihat Berbagai Pengalaman</h4>
+                            <i class="material-icons">face</i>
+                        </div>
+                        <div class="text2">
+                            <h4>Ikuti Sesuai Minat</h4>
+                            <i class="material-icons">explore</i>
+                        </div>
+                        <div class="text3">
+                            <h4>Tulis Cerita Pengalamanmu</h4>
+                            <i class="material-icons">create</i>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
+            <div class="col-md-6">
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
+                <div class="container">
+                    <!-- <img src="img/logo telkom.png" alt=""> -->
+                    <div class="rightside no-gutters d-flex justify-content-center align-items-center">
+                        <img src="img/logotelkom.png" alt="">
+                        <form id="bukukerja">
 
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
+                            <legend>Buku Kerja Praktik Telkom Indonesia Graha Merah Putih Bandung</legend><br>
+                            <?= Html::a('Gabung Sekarang!', ['site/home'], ['class' => 'btn btn-md btn-danger btn-block', 'id' => 'btnTentang']) ?>
+                            <?= Html::a('Tentang Buku', ['site/about'], ['class' => 'btn btn-md btn-outline-danger btn-block', 'id' => 'btnTentang', 'style' => 'font-family: Nunito, sans-serif ;']) ?>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
+    </body>
 
-    </div>
 </div>

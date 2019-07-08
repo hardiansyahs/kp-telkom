@@ -1,0 +1,65 @@
+.topside {
+    margin-top: -25px;
+    margin-left: -289px;
+    width: 1687px;
+    height: 360px;
+    background-color: red;
+    overflow: hidden;
+}
+
+.topimg {
+    margin: 0 0 0 330px;
+    position: cover;
+    opacity: 0.5;
+}
+
+.texttop {
+    position: absolute;
+    color: white;
+    font-family:'Nunito';
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 65px;
+}
+
+.botside {
+    margin-left: -289px;
+    width: 1687px;
+    height: 490px;
+    background-color: white;
+}
+
+.botimg {
+    margin: 50px 0 0 470px;
+    position: cover;
+    opacity: 0.1;
+}
+
+.textbot {
+    text-align: justify;
+    position: absolute;
+    color: black;
+    font-family:'Nunito';
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+}
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+      width: 80%;
+      padding: 0;
+    }
+    .right {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+      width: 100%;
+    }
+  }

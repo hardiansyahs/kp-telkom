@@ -1,0 +1,98 @@
+/* Tampilan sebelah kiri */
+.leftside, .rightside, img {
+    height: 50vh;
+    width: 100%;
+}
+
+@media screen and (min-width:460px) {
+    .leftside, .rightside, img {
+        height: 100vh;  
+    }
+}
+
+.leftside {
+    background: red;
+}
+
+.leftside img {
+    opacity: 0.5;
+}
+
+.left {
+    position: absolute;
+    top: 45%;
+    left: 58%;
+    transform: translate(-50%, -50%);;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    width: 70%;
+  }
+
+.text1 h4 {
+    padding-left: 35px;
+}
+
+.text1, .text2, .text3 {
+    position: relative;
+    padding-top: 30px;
+}
+
+.text1 i, .text2 i, .text3 i {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    
+}
+
+.text2 h4 {
+    padding-left: 35px;
+}
+
+.text3 h4 {
+    padding-left: 35px;
+}
+
+
+/* Tampilan Sebelah Kanan */
+.rightside {
+    background: white;
+}
+
+.rightside img {
+    position: absolute;
+    top: 20px;
+    right: 70px;
+    width: 230px;
+    height: 120px;
+}
+
+legend {
+    position: relative;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22pt;
+}
+
+#btnTentang {
+    font-family: 'Nunito', sans-serif;
+    font-size: 12pt;
+}
+
+#bukukerja {
+    text-align: left;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-top: 20px;
+}
+
+/* Material Icon */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
