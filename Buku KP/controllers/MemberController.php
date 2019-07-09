@@ -34,13 +34,16 @@ class MemberController extends Controller
         }
     }
 
+    public function actionCardmemberdit()
+    {   
+        $posts = MemberKP::find()->all();
+        return $this->render('cardmemberdit',['posts' => $posts]);
+    }
+
     public function actionRegistrasimemberepd()
     {
         return $this->render('registrasimemberepd');
     }
-	
-	    public function actionCardmemberdit()
-    {
-        return $this->render('cardmemberdit');
-    }
+
+
 }
