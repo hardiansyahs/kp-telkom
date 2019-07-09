@@ -44,7 +44,7 @@ yii\bootstrap\Modal::end();
 
     <div class="wrap">
         <div id="navbar">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
                 <a class="navbar-brand" href="<?= Url::to('index.php') ?>">Buku KP</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

@@ -25,10 +25,10 @@ $this->title = 'Buku KP | Homepage';
             <div class="column">
                 <div class="row">
                     <div class="col-10">
-                        <h1 class="display-5">KP DIT 1 2019</h1>
+                        <h1 class="display-5" style="color: #E74040">KP DIT 1 2019</h1>
                     </div>
                     <div class="col-2">
-                        <?= Html::a('Member DIT', ['member/registrasimemberdit'], ['class' => 'btn btn-md btn-danger float-right']) ?>
+                        <?= Html::a('Member DIT', ['member/cardmemberdit'], ['class' => 'btn btn-md btn-danger float-right']) ?>
                     </div>
                 </div>
                 <hr class="my-4">
@@ -38,14 +38,26 @@ $this->title = 'Buku KP | Homepage';
         <div class="jumbotron" style="background-image: url('img/epdpic.png'); background-size: 100% 100%; background-repeat: no-repeat;">
             <div class="row">
                 <div class="col-10">
-                    <h1 class="display-6">KP EPD 2 2019</h1>
+                    <h1 class="display-6" style="color: #E74040">KP EPD 2 2019</h1>
                 </div>
                 <div class="col-2">
-                <?= Html::a('Member EPD', ['member/registrasimemberepd'], ['class' => 'btn btn-md btn-danger float-right']) ?>
+                    <?= Html::a('Member EPD', ['member/registrasimemberepd'], ['class' => 'btn btn-md btn-danger float-right']) ?>
                 </div>
             </div>
             <hr class="my-4">
             <p><?= Html::a('Mulai Mendata Tamu', ['member/registrasimemberepd'], ['class' => 'btn btn-lg btn-danger']) ?></p>
+        </div>
+        <div class="jumbotron" style="background-image: url('img/hcispic.png'); background-size: 100% 100%; background-repeat: no-repeat;">
+            <div class="row">
+                <div class="col-10">
+                    <h1 class="display-6" style="color: #E74040">KP HCIS 3 2019</h1>
+                </div>
+                <div class="col-2">
+                    <?= Html::a('Member HCIS', ['member/cardmemberhcis'], ['class' => 'btn btn-md btn-danger float-right']) ?>
+                </div>
+            </div>
+            <hr class="my-4">
+            <p><?= Html::a('Mulai Mendata Tamu', ['member/registrasimemberhcis'], ['class' => 'btn btn-lg btn-danger']) ?></p>
         </div>
 
     </div>
