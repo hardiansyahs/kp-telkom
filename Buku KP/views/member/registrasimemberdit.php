@@ -46,7 +46,7 @@ $this->title = 'Buku KP | Registrasi';
         </div>
         <div class="form-row">
             <div class="form-group col-md-6">
-                <?= $form->field($post, 'bagian_divisi')->textInput(['placeholder' => 'Divisi Information Technology'])->label('Divisi/Bagian'); ?>
+                <?= $form->field($post, 'bagian_divisi')->textInput(['readonly' => true, 'value' => 'Divisi Information Technology'])->label('Divisi/Bagian'); ?>
             </div>
             <div class="form-group col-md-6">
                 <?= $form->field($post, 'tugas_pekerjaan')->textInput(['placeholder' => 'Tugas selama KP'])->label('Tugas Kerja Praktik'); ?>

@@ -20,15 +20,16 @@ class MemberController extends Controller
 
             if ($post->validate()) {
                 $post->save();
-                if (!empty($post)) {
-                    $foto->saveAs(Yii::getAlias('uploads/') . 'foto.' . $foto->extension);
+                if (!empty($post)) {                   
+                    $foto->saveAs(Yii::getAlias('uploads/') . $post->nama_lengkap . '.' . $foto->extension);
                     $post->foto = 'foto.' . $foto->extension;
                     $post->save(FALSE);
                 }
             }
 
+            $post->foto = $post->nama_lengkap . '.' . $foto->extension;
             $post->save();
-            return $this->redirect(['registrasimemberepd']);
+            return $this->redirect(['cardmemberdit']);
         } else {
             return $this->render('registrasimemberdit', ['post' => $post]);
         }
@@ -36,7 +37,27 @@ class MemberController extends Controller
 
     public function actionRegistrasimemberepd()
     {
-        return $this->render('registrasimemberepd');
+        $post = new MemberKP();
+
+        if ($post->load(Yii::$app->request->post())) {
+
+            $foto = UploadedFile::getInstance($post, 'foto');
+
+            if ($post->validate()) {
+                $post->save();
+                if (!empty($post)) {                   
+                    $foto->saveAs(Yii::getAlias('uploads/') . $post->nama_lengkap . '.' . $foto->extension);
+                    $post->foto = 'foto.' . $foto->extension;
+                    $post->save(FALSE);
+                }
+            }
+
+            $post->foto = $post->nama_lengkap . '.' . $foto->extension;
+            $post->save();
+            return $this->redirect(['cardmemberdit']);
+        } else {
+            return $this->render('registrasimemberepd', ['post' => $post]);
+        }
     }
 	
 	    public function actionCardmemberdit()

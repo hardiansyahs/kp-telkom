@@ -17,50 +17,52 @@ $this->title = 'Buku KP | Registrasi';
     <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:600&display=swap" rel="stylesheet">
+
 </head>
 <!-- <div class="site-index"> -->
 
 <body>
 
-
-    <?php
-    $form = ActiveForm::begin([
-        'options' => [
-            'id' => 'create-product-form',
-            'style' => 'font-family: Nunito'
-        ]
-    ]); ?>
+    <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data', 'class' => 'form-horizontal',
+    'style' => 'font-family: Nunito Sans']]); ?>
     <fieldset>
         <legend>Registrasi Member KP EPD</legend>
         <div class="form-row">
             <div class="form-group col-md-6">
-                <input type="text" class="form-control" id="inputEmail4" placeholder="Nama Lengkap">
+                <?= $form->field($post, 'nama_lengkap')->textInput(['placeholder' => 'Masukkan nama lengkap anda'])->label('Nama Lengkap'); ?>
             </div>
             <div class="form-group col-md-6">
-                <input type="text" class="form-control" id="inputPassword4" placeholder="Panggilan">
+                <?= $form->field($post, 'nim')->textInput(['placeholder' => 'Masukkan NIM anda'])->label('NIM'); ?>
             </div>
         </div>
         <div class="form-row">
             <div class="form-group col-md-6">
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Perguruan Tinggi">
+                <?= $form->field($post, 'perguruan_tinggi')->textInput(['placeholder' => 'Masukkan nama perguruan tinggi'])->label('Perguruan Tinggi'); ?>
             </div>
-            <div class="form-group col-md-3">
-                <input type="text" class="form-control" id="inputAddress" placeholder="Jurusan">
-            </div>
-            <div class="form-group col-md-3">
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Angkatan">
+            <div class="form-group col-md-6">
+                <?= $form->field($post, 'jurusan_angkatan')->textInput(['placeholder' => 'Mis. S1 Informatika / 2016'])->label('Jurusan & Angkatan'); ?>
             </div>
         </div>
         <div class="form-row">
             <div class="form-group col-md-6">
-                <input type="text" id="disabledTextInput" class="form-control" placeholder="Divisi">
+                <?= $form->field($post, 'bagian_divisi')->textInput(['readonly' => true, 'value' => 'EPD'])->label('Divisi/Bagian'); ?>
             </div>
-            <div class="form-group col-md-4">
-                <input type="text" id="disabledTextInput" class="form-control" placeholder="Tugas">
+            <div class="form-group col-md-6">
+                <?= $form->field($post, 'tugas_pekerjaan')->textInput(['placeholder' => 'Tugas selama KP'])->label('Tugas Kerja Praktik'); ?>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <?= $form->field($post, 'socmed')->textInput(['placeholder' => 'Line, Instagram, Facebook, dll'])->label('Social Media'); ?>
             </div>
             <div class="form-group col-md-2">
-                <input type="text" class="form-control" id="inputZip" placeholder="Socmed">
-                
+                <?= $form->field($post, 'foto')->fileInput(); ?>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <?= Html::submitButton('Submit', ['class' => 'btn btn-primary']) ?>
             </div>
         </div>
 
