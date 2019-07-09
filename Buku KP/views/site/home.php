@@ -28,7 +28,7 @@ $this->title = 'Buku KP | Homepage';
                         <h1 class="display-5">KP DIT 1 2019</h1>
                     </div>
                     <div class="col-2">
-                        <?= Html::a('Member DIT', ['member/registrasimemberdit'], ['class' => 'btn btn-md btn-danger float-right']) ?>
+                        <?= Html::a('Member DIT', ['member/cardmemberdit'], ['class' => 'btn btn-md btn-danger float-right']) ?>
                     </div>
                 </div>
                 <hr class="my-4">
@@ -41,7 +41,7 @@ $this->title = 'Buku KP | Homepage';
                     <h1 class="display-6">KP EPD 2 2019</h1>
                 </div>
                 <div class="col-2">
-                <?= Html::a('Member EPD', ['member/registrasimemberepd'], ['class' => 'btn btn-md btn-danger float-right']) ?>
+                <?= Html::a('Member EPD', ['member/cardmemberepd'], ['class' => 'btn btn-md btn-danger float-right']) ?>
                 </div>
             </div>
             <hr class="my-4">

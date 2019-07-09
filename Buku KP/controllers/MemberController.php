@@ -20,7 +20,7 @@ class MemberController extends Controller
 
             if ($post->validate()) {
                 $post->save();
-                if (!empty($post)) {                   
+                if (!empty($post)) {
                     $foto->saveAs(Yii::getAlias('uploads/') . $post->nama_lengkap . '.' . $foto->extension);
                     $post->foto = 'foto.' . $foto->extension;
                     $post->save(FALSE);
@@ -36,9 +36,15 @@ class MemberController extends Controller
     }
 
     public function actionCardmemberdit()
-    {   
+    {
         $posts = MemberKP::find()->all();
-        return $this->render('cardmemberdit',['posts' => $posts]);
+        return $this->render('cardmemberdit', ['posts' => $posts]);
+    }
+
+    public function actionViewdit($id)
+    {
+        $post = MemberKP::findOne($id);
+        return $this->render('detailmemberdit', ['post' => $post]);
     }
 
     public function actionRegistrasimemberepd()
@@ -51,7 +57,7 @@ class MemberController extends Controller
 
             if ($post->validate()) {
                 $post->save();
-                if (!empty($post)) {                   
+                if (!empty($post)) {
                     $foto->saveAs(Yii::getAlias('uploads/') . $post->nama_lengkap . '.' . $foto->extension);
                     $post->foto = 'foto.' . $foto->extension;
                     $post->save(FALSE);
@@ -60,11 +66,21 @@ class MemberController extends Controller
 
             $post->foto = $post->nama_lengkap . '.' . $foto->extension;
             $post->save();
-            return $this->redirect(['cardmemberdit']);
+            return $this->redirect(['cardmemberepd']);
         } else {
             return $this->render('registrasimemberepd', ['post' => $post]);
         }
     }
 
+    public function actionCardmemberepd()
+    {
+        $posts = MemberKP::find()->all();
+        return $this->render('cardmemberepd', ['posts' => $posts]);
+    }
 
+    public function actionViewepd($id)
+    {
+        $post = MemberKP::findOne($id);
+        return $this->render('detailmemberepd', ['post' => $post]);
+    }
 }

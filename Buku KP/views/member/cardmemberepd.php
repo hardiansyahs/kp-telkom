@@ -1,6 +1,7 @@
 <?php
 
 use yii\helpers\html;
+use yii\db\Query;
 
 ?>
 <!DOCTYPE html>
@@ -29,7 +30,7 @@ use yii\helpers\html;
                     <a href="#"><i class="fa fa-linkedin"></i></a>
                     <a href="#"><i class="fa fa-facebook"></i></a>
                 </div>
-                <p><?= Html::a('View Detail Member DIT', ['viewdit', 'id' => $field->id], ['class' => 'badge badge-primary']) ?></p>
+                <p><?= Html::a('View Detail Member EPD', ['viewepd', 'id' => $field->id], ['class' => 'badge badge-primary']) ?></p>
             </div>
         </div>
     <?php } ?>
