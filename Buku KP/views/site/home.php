@@ -41,7 +41,11 @@ $this->title = 'Buku KP | Homepage';
                     <h1 class="display-6" style="color: #E74040">KP EPD 2 2019</h1>
                 </div>
                 <div class="col-2">
+<<<<<<< HEAD
                     <?= Html::a('Member EPD', ['member/registrasimemberepd'], ['class' => 'btn btn-md btn-danger float-right']) ?>
+=======
+                <?= Html::a('Member EPD', ['member/cardmemberepd'], ['class' => 'btn btn-md btn-danger float-right']) ?>
+>>>>>>> 0dcf038fdbbebec4abcb03d58e0ddb84a9ba8f8d
                 </div>
             </div>
             <hr class="my-4">
