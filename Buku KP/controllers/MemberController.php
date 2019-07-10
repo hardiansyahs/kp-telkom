@@ -83,4 +83,6 @@ class MemberController extends Controller
         $post = MemberKP::findOne($id);
         return $this->render('detailmemberepd', ['post' => $post]);
     }
+
+
 }
