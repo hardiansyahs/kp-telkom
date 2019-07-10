@@ -117,4 +117,6 @@ class MemberController extends Controller
         return $this->render('detailmemberepd', ['post' => $post]);
 >>>>>>> 0dcf038fdbbebec4abcb03d58e0ddb84a9ba8f8d
     }
+
+
 }

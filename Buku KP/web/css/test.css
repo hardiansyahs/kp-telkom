@@ -1,0 +1,49 @@
+.container {
+    width: 4600px;
+    height: 800px;
+    margin: auto;
+    display:table;
+    text-align: center;
+    position: relative;
+}
+.row1 {
+    display:table-row;
+    width: 4600px;
+    height: 200px;
+    background: red;
+    overflow: hidden;
+}
+
+.topimg {
+    width: 600px;
+    position: cover;
+    opacity: 0.5;
+}
+
+.row1 div {
+    display:table-cell;
+    width:50%;
+}
+.row2 {
+    display:table-row;
+    max-height: 500px;
+    background: green;
+}
+.row2 div {
+    display:table-cell;
+    width:50%;
+}
+@media (max-width: 4600px) {
+    .row1 {
+        width: 100%;
+    }
+    .row1 div + div {
+        display: none;
+    }
+    .row2 {
+        width: 100%;
+    }
+    .row2 div + div {
+        display: none;
+    }
+}

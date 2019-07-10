@@ -1,14 +1,21 @@
 .topside {
     margin-top: -25px;
     margin-left: -289px;
-    width: 1687px;
-    height: 360px;
+    margin-right: -189.2;
+    width: 215vh;
+    max-height: 400px;
     background-color: red;
     overflow: hidden;
 }
 
+.column1 {
+  height: 50vh;
+}
+
 .topimg {
-    margin: 0 0 0 330px;
+    margin: 1px 0 0 440px;
+    width: 110vh;
+    height: 50vh;
     position: cover;
     opacity: 0.5;
 }
@@ -17,7 +24,7 @@
     position: absolute;
     color: white;
     font-family:'Nunito';
-    top: 40%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 65px;
@@ -25,13 +32,19 @@
 
 .botside {
     margin-left: -289px;
-    width: 1687px;
-    height: 490px;
+    width: 215vh;
+    height: 400 px;
     background-color: white;
+    overflow: hidden;
+}
+
+.column2 {
+  height: 50vh;
 }
 
 .botimg {
     margin: 50px 0 0 470px;
+    height: 80vh;
     position: cover;
     opacity: 0.1;
 }
@@ -41,25 +54,14 @@
     position: absolute;
     color: black;
     font-family:'Nunito';
-    top: 120%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 24px;
 }
 
-@media only screen and (max-width:800px) {
-    /* For tablets: */
-    .main {
-      width: 80%;
-      padding: 0;
-    }
-    .right {
-      width: 100%;
-    }
+@media screen and (min-width:460px) {
+  .leftside, .rightside, img {
+      height: 100vh;  
   }
-  @media only screen and (max-width:500px) {
-    /* For mobile phones: */
-    .menu, .main, .right {
-      width: 100%;
-    }
-  }
+}
