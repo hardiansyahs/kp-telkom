@@ -2,7 +2,7 @@
     margin-top: -25px;
     margin-left: -289px;
     margin-right: -189.2;
-    width: 215vh;
+    width: 245.3vh;
     max-height: 400px;
     background-color: red;
     overflow: hidden;
@@ -13,7 +13,7 @@
 }
 
 .topimg {
-    margin: 1px 0 0 440px;
+    margin: 1px 0 0 515px;
     width: 110vh;
     height: 50vh;
     position: cover;
@@ -24,7 +24,7 @@
     position: absolute;
     color: white;
     font-family:'Nunito';
-    top: 30%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 65px;

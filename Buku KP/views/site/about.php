@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 
 /* @var $this yii\web\View */
@@ -7,10 +6,6 @@ use yii\helpers\Html;
 
 $this->title = 'Tentang Buku KP'
 ?>
-=======
-<!DOCTYPE html>
-<html lang="en">
->>>>>>> 3135365c11d32afacadd6b29111d0345b2336872
 
 <head>
     <meta charset="UTF-8">
@@ -35,9 +30,9 @@ $this->title = 'Tentang Buku KP'
                 <div class="column2">
                     <img class="botimg" src="../web/img/iconit.png" alt="">
                     <div class="textbot">Website yang dibuat dalam page ini bukan merupakan source code resmi dari website milik PT. Telkom Indonesia.
-                        Website ini dibuat untuk memenuhi tugas kerja praktik di Divisi Information Technology Telkom Indonesia Graha Merah Putih Bandung. 
-                        Website ini dibangun menggunakan Framework Yii2 dengan metode MVC (Model-View-Controller). Website ini berisi tentang Buku Kerja Praktik 
-                        yang digunakan untuk mendata mahasiswa/i yang melaksanakan Kerja Praktik dari berbagai perguruan tinggi sebagai syarat memenuhi mata kuliah 
+                        Website ini dibuat untuk memenuhi tugas kerja praktik di Divisi Information Technology Telkom Indonesia Graha Merah Putih Bandung.
+                        Website ini dibangun menggunakan Framework Yii2 dengan metode MVC (Model-View-Controller). Website ini berisi tentang Buku Kerja Praktik
+                        yang digunakan untuk mendata mahasiswa/i yang melaksanakan Kerja Praktik dari berbagai perguruan tinggi sebagai syarat memenuhi mata kuliah
                         Kerja Praktik. Data-data ini disimpan dan diolah menggunakan MySQL dan ditampilkan dengan gaya ala Buku Tahunan Sekolah.
                     </div>
                 </div>

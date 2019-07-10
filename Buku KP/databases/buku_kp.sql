@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 09, 2019 at 05:15 AM
+-- Generation Time: Jul 10, 2019 at 08:22 PM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.2
 
@@ -45,10 +45,15 @@ CREATE TABLE `member` (
 --
 
 INSERT INTO `member` (`id`, `nama_lengkap`, `nim`, `perguruan_tinggi`, `jurusan_angkatan`, `bagian_divisi`, `tugas_pekerjaan`, `socmed`, `foto`) VALUES
-(3, 'as', 'as', 'as', 'as', 'as', 'as', 'as', ''),
-(4, 'as', 'as', 'as', 'as', 'as', 'as', 'as', ''),
-(5, 'as', 'as', 'as', 'as', 'as', 'as', 'as', 'foto.jpg'),
-(6, 'Hardiansyah Shidek', '1301164097', 'Telkom University', 'S1 Informatika / 2016', 'Divisi Information Technology', 'Buat web', 'Line: shidek24', 'foto.jpg');
+(14, 'James', 'Hua', 'Hua', 'asdasdasdasd', 'Divisi Information Technology', 'asdasdasd', 'ASDAS', 'James.jpg'),
+(15, 'Ujang', 'asdasd', 'asdasd', 'asdasd', 'Divisi Information Technology', 'asdasd', 'asdasd', 'Ujang.jpg'),
+(20, 'Hardiansyah Shidek', '1301164097', 'Telkom University', 'S1 Informatika / 2016', 'Divisi Information Technology', 'Buat web', 'Line: shidek24', 'Hardiansyah Shidek.jpg'),
+(21, 'Hompimpa', '1409182321', 'ITB', 'S1 Teknik Geologi', 'Divisi Information Technology', 'Nyari batu', 'hehe', 'Hompimpa.jpg'),
+(22, 'Gareth Bale', '1231324223', 'Oxford', 'Bachelor of Injury', 'EPD', 'Moan', 'injurieesss', 'Gareth Bale.jpg'),
+(24, 'Neymar Jr.', '2131231231', 'Santos', 'D3 Diving', 'Human Capital Information System', 'Dive', 'dvee', 'Neymar Jr..png'),
+(25, 'Jamal Wisaksono', '1301192837', 'Telkom University', 'S1 Informatika / 2016', 'Human Capital Information System', 'Main Tenis Meja', 'jamal', 'Jamal Wisaksono.jpg'),
+(26, 'Mobil', '1320922213', 'Oxford', 'Bachelor of Injury', 'EPD', 'Gambar', 'Facebook : Mobil', 'Mobil.png'),
+(27, 'Jack', '1231234122', 'Telkom University', 'S1 Informatika / 2016', 'Divisi Information Technology', 'tidur', 'ASDAS', 'Jack.jpg');
 
 --
 -- Indexes for dumped tables
@@ -68,7 +73,7 @@ ALTER TABLE `member`
 -- AUTO_INCREMENT for table `member`
 --
 ALTER TABLE `member`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
