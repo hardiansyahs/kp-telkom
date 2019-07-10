@@ -4,10 +4,8 @@
 
 use yii\helpers\Html;
 
+$this->title = 'Tentang Buku KP'
 ?>
-<title>
-    About KP
-</title>
 
 <head>
     <link rel="stylesheet" href="css/about.css">

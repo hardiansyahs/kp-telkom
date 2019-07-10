@@ -5,6 +5,7 @@ use yii\bootstrap\Modal;
 use yii\helpers\Url;
 use yii\bootstrap\ActiveForm;
 
+
 /* @var $this yii\web\View */
 
 $this->title = 'Buku KP | Registrasi';
@@ -27,7 +28,7 @@ $this->title = 'Buku KP | Registrasi';
     <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data', 'class' => 'form-horizontal',
     'style' => 'font-family: Nunito Sans']]); ?>
     <fieldset>
-        <legend>Registrasi Member KP DIT</legend>
+        <legend style="color:rgb(243, 41, 41); font-size: 24pt;">Registrasi Member KP DIT</legend>
         <div class="form-row">
             <div class="form-group col-md-6">
                 <?= $form->field($post, 'nama_lengkap')->textInput(['placeholder' => 'Masukkan nama lengkap anda'])->label('Nama Lengkap'); ?>

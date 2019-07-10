@@ -23,6 +23,8 @@ class AppAsset extends AssetBundle
         'css/bootstrap/bootstrap.css',
     ];
     public $js = [
+        'js/jquery.min.js',
+        'js/jquery.imgareaselect.pack.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

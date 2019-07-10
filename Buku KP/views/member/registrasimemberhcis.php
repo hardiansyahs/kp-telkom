@@ -7,7 +7,7 @@ use yii\bootstrap\ActiveForm;
 
 /* @var $this yii\web\View */
 
-$this->title = 'Buku KP | Registrasi';
+$this->title = 'Buku KP | Registrasi HCIS';
 ?>
 <html lang="en">
 
@@ -27,7 +27,7 @@ $this->title = 'Buku KP | Registrasi';
     <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data', 'class' => 'form-horizontal',
     'style' => 'font-family: Nunito Sans']]); ?>
     <fieldset>
-        <legend>Registrasi Member KP HCIS</legend>
+        <legend style="color:rgb(243, 41, 41); font-size: 24pt;">Registrasi Member KP HCIS</legend>
         <div class="form-row">
             <div class="form-group col-md-6">
                 <?= $form->field($post, 'nama_lengkap')->textInput(['placeholder' => 'Masukkan nama lengkap anda'])->label('Nama Lengkap'); ?>
@@ -46,7 +46,7 @@ $this->title = 'Buku KP | Registrasi';
         </div>
         <div class="form-row">
             <div class="form-group col-md-6">
-                <?= $form->field($post, 'bagian_divisi')->textInput(['readonly' => true, 'value' => 'Human Capital Information Staff'])->label('Divisi/Bagian'); ?>
+                <?= $form->field($post, 'bagian_divisi')->textInput(['readonly' => true, 'value' => 'Human Capital Information System'])->label('Divisi/Bagian'); ?>
             </div>
             <div class="form-group col-md-6">
                 <?= $form->field($post, 'tugas_pekerjaan')->textInput(['placeholder' => 'Tugas selama KP'])->label('Tugas Kerja Praktik'); ?>

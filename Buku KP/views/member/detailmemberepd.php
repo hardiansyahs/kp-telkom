@@ -13,42 +13,38 @@ $this->title = 'Daftar Tamu';
     <title>Student List</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:600&display=swap" rel="stylesheet">
 </head>
 <!-- <div class="site-index"> -->
 
-<h2 style="color:white">Detail Member</h2>
+<h2>Detail Member</h2>
 
-<body style="background-color:darkslategrey">
-    <div class="body-content">
-        <div class="form-group">
-            <ul class="list-group">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <?php echo $post->nama_lengkap; ?>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <?php echo $post->nim; ?>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <?php echo $post->perguruan_tinggi; ?>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <?php echo $post->jurusan_angkatan; ?>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <?php echo $post->bagian_divisi; ?>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <?php echo $post->tugas_pekerjaan; ?>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <?php echo $post->socmed; ?>
-                </li>
-            </ul>
+<body>
+    <section>
+        <div class="container py-3">
+            <div class="card">
+                <div class="row ">
+                    <div class="col-md-4">
+                        <img src="<?php echo Yii::getAlias('uploads/') . $post->foto ?>" alt="Upload plz" class="w-100">
+                    </div>
+                    <div class="col-md-8 px-3">
+                        <div class="card-block px-3">
+                            <h4 class="card-title"><?php echo $post->nama_lengkap; ?></h4>
+                            <p class="card-text">NIM : <?php echo $post->nim; ?></p>
+                            <p class="card-text">Peguruan Tinggi : <?php echo $post->perguruan_tinggi; ?></p>
+                            <p class="card-text">Jurusan / Angkatan : <?php echo $post->jurusan_angkatan; ?></p>
+                            <p class="card-text">Bagian / Divisi : <?php echo $post->bagian_divisi; ?></p>
+                            <p class="card-text">Tugas Kerja Praktik : <?php echo $post->tugas_pekerjaan; ?></p>
+                            <p class="card-text">Social Media : <?php echo $post->socmed; ?></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div><br>
+            <?= Html::a('Go Back', ['/member/cardmemberepd'], ['class' => "btn btn-md btn-danger"]) ?>
         </div>
-        <div class="form-group">
-            <?= Html::a('Go Back', ['/member/cardmemberdit'], ['class' => "btn btn-md btn-danger"]) ?>
         </div>
-    </div>
+    </section>

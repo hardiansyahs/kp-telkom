@@ -35,7 +35,7 @@ class MemberKP extends \yii\db\ActiveRecord
         return [
             [['nama_lengkap', 'nim', 'perguruan_tinggi', 'jurusan_angkatan', 'bagian_divisi', 'tugas_pekerjaan', 'socmed'], 'required'],
             [['nama_lengkap', 'nim', 'perguruan_tinggi', 'jurusan_angkatan', 'bagian_divisi', 'tugas_pekerjaan', 'socmed', 'foto'], 'string', 'max' => 255],
-            [['foto'],'file','skipOnEmpty'=>TRUE,'extensions'=>'jpg, png']
+            [['foto'], 'file', 'skipOnEmpty' => TRUE, 'extensions' => 'jpg, png']
         ];
     }
 
@@ -56,4 +56,9 @@ class MemberKP extends \yii\db\ActiveRecord
             'foto' => 'Foto',
         ];
     }
+
+    /**
+     * @inheritdoc
+     */
+
 }

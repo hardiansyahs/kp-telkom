@@ -1,7 +1,7 @@
 <?php
 use yii\helpers\Html;
 
-$this->title = 'Buku KP | Member EPD';
+$this->title = 'Buku KP | Member HCIS';
 ?>
 <html>
 
@@ -13,7 +13,7 @@ $this->title = 'Buku KP | Member EPD';
 </head>
 
 <body>
-    <h2 style="text-align:center;">Member EPD</h2><br>
+    <h2 style="text-align:center;">Member HCIS</h2><br>
     <div class="container">
         <div class="row" id="load_data"><br>
 
@@ -24,7 +24,7 @@ $this->title = 'Buku KP | Member EPD';
                         <h4><?php echo $field->nama_lengkap; ?></h4>
                         <p class="title"><?php echo $field->bagian_divisi; ?></p>
                         <p><?php echo $field->perguruan_tinggi; ?></p>
-                        <p><?= Html::a('Lihat Profil', ['viewepd', 'id' => $field->id], ['class' => 'badge badge-primary', 'id' => 'button']) ?></p>
+                        <p><?= Html::a('Lihat Profil', ['viewhcis', 'id' => $field->id], ['class' => 'badge badge-primary', 'id' => 'button']) ?></p>
                     </div>
                 </div>
             <?php } ?>
