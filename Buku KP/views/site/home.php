@@ -68,4 +68,5 @@ $this->title = 'Buku KP | Homepage';
 
     </div>
     </div>
+
 </body>

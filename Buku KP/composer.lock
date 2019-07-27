@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ad19e759d10a04f71afa60b02a345176",
+    "content-hash": "ce2b4e8852be51b1731cc1ff7cc4ceb2",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -604,6 +604,46 @@
             ],
             "abandoned": "mohorev/yii2-upload-behavior",
             "time": "2018-08-10T07:58:22+00:00"
+        },
+        {
+            "name": "shiyang/yii2-login-widget",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:shiyangDR/yii2-login-widget.git",
+                "reference": "3ea8521104d46f62cac6dae09b424404d870a2b1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/shiyangDR/yii2-login-widget/zipball/3ea8521104d46f62cac6dae09b424404d870a2b1",
+                "reference": "3ea8521104d46f62cac6dae09b424404d870a2b1",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "shiyang\\login\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Shiyang",
+                    "email": "dr@shiyang.me"
+                }
+            ],
+            "description": "This extension provides a login portlet  that provides user login functionality.",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "time": "2015-02-10T15:53:34+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
