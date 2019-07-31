@@ -75,9 +75,6 @@ yii\bootstrap\Modal::end();
                                 <?= Html::a('HCIS', ['member/cardmemberhcis'], ['class' => 'dropdown-item']) ?>
                             </div>
                         </li>
-                        <li class="nav-item">
-                            <?= Html::a('About', ['site/about'], ['class' => 'nav-link', 'style' => 'color:rgb(248, 58, 58)']) ?>
-                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="color:rgb(248, 58, 58)">
                                 Account
@@ -87,6 +84,12 @@ yii\bootstrap\Modal::end();
                                 <?= Html::a('Signup', ['site/signup'], ['class' => 'dropdown-item'], ['data' => ['method' => 'post']]) ?>
                                 <?= Html::a('Logout', ['site/logout'], ['class' => 'dropdown-item']) ?>
                             </div>
+                        </li>
+                        <li class="nav-item">
+                            <?= Html::a('About', ['site/about'], ['class' => 'nav-link', 'style' => 'color:rgb(248, 58, 58)']) ?>
+                        </li>
+                        <li class="nav-item">
+                            <?= Html::a('Feedback', ['site/feedback'], ['class' => 'nav-link', 'style' => 'color:rgb(248, 58, 58)']) ?>
                         </li>
                     </ul>
                 </div>
