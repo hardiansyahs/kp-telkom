@@ -53,30 +53,16 @@ yii\bootstrap\Modal::end();
                 <div class="collapse navbar-collapse" id="navbarColor01">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <?= Html::a('Home', ['site/home'], ['class' => 'nav-link', 'style' => 'color:rgb(248, 58, 58)']) ?>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="color:rgb(248, 58, 58)">
-                                Registrasi
-                            </a>
-                            <div class="dropdown-menu">
-                                <?= Html::a('DIT', ['member/registrasimemberdit'], ['class' => 'dropdown-item']) ?>
-                                <?= Html::a('EPD', ['member/registrasimemberepd'], ['class' => 'dropdown-item']) ?>
-                                <?= Html::a('HCIS', ['member/registrasimemberhcis'], ['class' => 'dropdown-item']) ?>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="color:rgb(248, 58, 58)">
-                                Member
-                            </a>
-                            <div class="dropdown-menu">
-                                <?= Html::a('DIT', ['member/cardmemberdit'], ['class' => 'dropdown-item']) ?>
-                                <?= Html::a('EPD', ['member/cardmemberepd'], ['class' => 'dropdown-item']) ?>
-                                <?= Html::a('HCIS', ['member/cardmemberhcis'], ['class' => 'dropdown-item']) ?>
-                            </div>
+                            <?= Html::a('Beranda', ['admin/index'], ['class' => 'nav-link', 'style' => 'color:rgb(248, 58, 58)']) ?>
                         </li>
                         <li class="nav-item">
-                            <?= Html::a('About', ['site/about'], ['class' => 'nav-link', 'style' => 'color:rgb(248, 58, 58)']) ?>
+                            <?= Html::a('menu', ['site/home'], ['class' => 'nav-link', 'style' => 'color:rgb(248, 58, 58)']) ?>
+                        </li>
+                        <li class="nav-item">
+                            <?= Html::a('menu', ['site/home'], ['class' => 'nav-link', 'style' => 'color:rgb(248, 58, 58)']) ?>
+                        </li>
+                        <li class="nav-item">
+                            <?= Html::a('About', ['/admin/index'], ['class' => 'nav-link', 'style' => 'color:rgb(248, 58, 58)']) ?>
                         </li>
                     </ul>
                 </div>
