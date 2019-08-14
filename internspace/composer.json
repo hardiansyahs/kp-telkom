@@ -20,7 +20,8 @@
         "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
         "budyaga/yii2-cropper": "*",
         "karpoff/yii2-crop-image-upload": "*",
-        "cyneek/yii2-widget-upload-crop": "dev-master"
+        "cyneek/yii2-widget-upload-crop": "dev-master",
+        "shiyang/yii2-login-widget": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",
