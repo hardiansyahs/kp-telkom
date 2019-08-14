@@ -9,6 +9,8 @@ use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\UserKP;
+use app\models\Feedback;
 
 class SiteController extends Controller
 {
@@ -130,5 +132,45 @@ class SiteController extends Controller
     public function actionHome()
     {
         return $this->render('home');
+    }
+
+    public function actionSignup()
+    {
+        $post = new UserKP();
+
+        if ($post->load(Yii::$app->request->post())) {
+
+            if ($post->validate()) {
+                $post->save();
+                if (!empty($post)) {
+                    $post->save(FALSE);
+                }
+            }
+
+            $post->save();
+            return $this->redirect(['home']);
+        } else {
+            return $this->render('signup', ['post' => $post]);
+        }
+    }
+
+    public function actionFeedback()
+    {
+        $post = new Feedback();
+
+        if ($post->load(Yii::$app->request->post())) {
+
+            if ($post->validate()) {
+                $post->save();
+                if (!empty($post)) {
+                    $post->save(FALSE);
+                }
+            }
+
+            $post->save();
+            return $this->redirect(['home']);
+        } else {
+            return $this->render('feedback', ['post' => $post]);
+        }
     }
 }

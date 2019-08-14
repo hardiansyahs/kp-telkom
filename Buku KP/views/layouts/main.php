@@ -45,7 +45,7 @@ yii\bootstrap\Modal::end();
     <div class="wrap">
         <div id="navbar">
             <nav class="navbar fixed-top navbar-expand-lg navbar-light shadow-sm p-3 mb-5 bg-white rounded" style='background-color:whitesmoke'>
-                <a class="navbar-brand" href="<?= Url::to('index.php') ?>" style ="font-size:18pt;">Buku KP</a>
+                <a class="navbar-brand" href="<?= Url::to('index.php') ?>" style="font-size:18pt;">Buku KP</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -75,8 +75,21 @@ yii\bootstrap\Modal::end();
                                 <?= Html::a('HCIS', ['member/cardmemberhcis'], ['class' => 'dropdown-item']) ?>
                             </div>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="color:rgb(248, 58, 58)">
+                                Account
+                            </a>
+                            <div class="dropdown-menu">
+                                <?= Html::a('Login', ['site/login'], ['class' => 'dropdown-item']) ?>
+                                <?= Html::a('Signup', ['site/signup'], ['class' => 'dropdown-item'], ['data' => ['method' => 'post']]) ?>
+                                <?= Html::a('Logout', ['site/logout'], ['class' => 'dropdown-item']) ?>
+                            </div>
+                        </li>
                         <li class="nav-item">
                             <?= Html::a('About', ['site/about'], ['class' => 'nav-link', 'style' => 'color:rgb(248, 58, 58)']) ?>
+                        </li>
+                        <li class="nav-item">
+                            <?= Html::a('Feedback', ['site/feedback'], ['class' => 'nav-link', 'style' => 'color:rgb(248, 58, 58)']) ?>
                         </li>
                     </ul>
                 </div>
